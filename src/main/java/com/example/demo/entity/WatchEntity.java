@@ -3,7 +3,7 @@ package com.example.demo.entity;
 import javax.persistence.*;
 
 @Entity
-public class ItemEntity {
+public class WatchEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
@@ -11,8 +11,19 @@ public class ItemEntity {
     @Column(name="description", columnDefinition = "text")
     String description;
     double price;
+    String img;
 
-    public ItemEntity() {
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
+
+
+
+    public WatchEntity() {
     }
 
     public int getId() {

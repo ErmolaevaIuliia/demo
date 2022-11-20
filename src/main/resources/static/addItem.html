@@ -10,7 +10,7 @@
 <body>
 <div class="container">
     <div class="col-sm-7 mx-auto">
-        <form action="/index/addItem" method="post">
+        <form action="/watch/addWatch" method="post" enctype="multipart/form-data">
             <div class="mb-3">
                 <input class="form-control" type="text" name="title" placeholder="Наименование">
             </div>
@@ -21,9 +21,9 @@
                 <div class="col-sm-12">
                     <input type="number" name="price" placeholder="Цена">
                 </div>
-<!--                <div class="col-sm-12">-->
-<!--                    <input type="file" name="file">-->
-<!--                </div>-->
+                <div class="col-sm-12">
+                    <input type="file" name="file" class="form-control">
+                </div>
             </div>
             <div class="mb-3">
                 <input type="submit" value="Добавить товар">
